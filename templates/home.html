@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+<div class="jumbotron "style="background-color: aqua;">
+  <h1 class="display-4"style="color:red;">Acme Auto Client Management System</h1>
+  <p class="lead">Car Sales and Service Client Management System.</p>
+  <p class="lead">
+       <a class="btn btn-primary" style="color: white" href="{% url 'client_list' %}" role="button">View All Clients</a>
+  </p>
+
+</div>
+<div>
+
+    <img class="preloader" src="{% static 'img1.png' %}" alt="">
+
+</div>
+
+{% endblock content %}
