@@ -1,9 +1,0 @@
-{% extends 'base.html' %}
-
-{% block content %}
-    <name style="color:white"><h1>Edit</h1></name>
-    <form action="" method="post">{% csrf_token %}
-      <name style="color:white">{{ form.as_p }}</name>
-    <button class="btn btn-primary" style="color: white" type="submit">Update</button>
-</form>
-{% endblock content %}
