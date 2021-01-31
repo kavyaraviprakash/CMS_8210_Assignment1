@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <name style="color:white"><h1>Delete</h1></name>
+    <form action="" method="post">{% csrf_token %}
+        <name style="color:white"> <p>Are you sure you want to delete "{{ client.name }}"?</p></name>
+      <button class="btn btn-primary" style="color: white" type="submit">Confirm</button>
+    </form>
+{% endblock content %}
